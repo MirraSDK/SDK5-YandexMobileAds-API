@@ -29,6 +29,7 @@ namespace MirraGames.SDK.YandexMobileAds {
 
         public YandexMobileAds(YandexMobileAds_Configuration configuration, IEventAggregator eventAggregator) : base(eventAggregator) {
             this.configuration = configuration;
+            SetInitialized();
         }
 
         private string GetInterstitialAdUnitId() {
@@ -66,10 +67,6 @@ namespace MirraGames.SDK.YandexMobileAds {
         protected override void DisableBannerImpl() {
             Logger.NotAvailableWarning(this, nameof(DisableBannerImpl));
         }
-
-        // Implement interstitial and rewarded ads methods using Yandex Mobile Ads SDK
-        // The contract should be simple, you call invoke and it shows the ad with onopen callback, and after ad is closed by user, it calls onclose
-        // Everything else should be handled inside this class, like ad ids just hardcode what is needed to start ad above in the fields and I'll refactor later
 
         protected override void InvokeInterstitialImpl(Action onOpen = null, Action<bool> onClose = null) {
             string adUnitId = GetInterstitialAdUnitId();
