@@ -1,0 +1,22 @@
+{
+    "name": "MirraGames.SDK.YandexMobileAds",
+    "rootNamespace": "MirraGames.SDK.YandexMobileAds",
+    "references": [
+        "MirraGames.SDK.Common",
+        "YandexMobileAds"
+    ],
+    "includePlatforms": [
+        "Android",
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "UNITY_ANDROID"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
