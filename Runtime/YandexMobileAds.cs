@@ -32,6 +32,9 @@ namespace MirraGames.SDK.YandexMobileAds {
             SetInitialized();
         }
 
+        public override bool IsInterstitialAvailable => true;
+        public override bool IsRewardedAvailable => true;
+
         private string GetInterstitialAdUnitId() {
 #if UNITY_IOS
             return configuration.InterstitialAdUnitIdIOS;
