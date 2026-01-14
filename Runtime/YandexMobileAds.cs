@@ -71,7 +71,7 @@ namespace MirraGames.SDK.YandexMobileAds {
             Logger.NotAvailableWarning(this, nameof(DisableBannerImpl));
         }
 
-        protected override void InvokeInterstitialImpl(Action onOpen = null, Action<bool> onClose = null) {
+        protected override void InvokeInterstitialImpl(InterstitialParameters parameters, Action onOpen, Action<bool> onClose) {
             string adUnitId = GetInterstitialAdUnitId();
             if (string.IsNullOrEmpty(adUnitId)) {
                 onClose?.Invoke(false);
@@ -155,7 +155,7 @@ namespace MirraGames.SDK.YandexMobileAds {
             }
         }
 
-        protected override void InvokeRewardedImpl(Action onOpen = null, Action<bool> onClose = null, string rewardTag = null) {
+        protected override void InvokeRewardedImpl(RewardedParameters parameters, Action onOpen, Action<bool> onClose) {
             // rewardTag is ignored as per Yandex SDK; rewards are handled generically
             string adUnitId = GetRewardedAdUnitId();
             if (string.IsNullOrEmpty(adUnitId)) {
