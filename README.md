@@ -8,7 +8,7 @@
 
 5. Click on Install. The package will be added to your project.
 
-6. If you don't have `External Dependency Manager`, install it from My Registries as well.
+6. If you don't have `External Dependency Manager`, install it from My Registries as well. Don't forget to do `Force Resolve` and make sure it succeeds before building app!
 
 7. To use mediation, you should also install the `Yandex Mobile Ads Mediation for Unity` package alongside with base package above.
 
