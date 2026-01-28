@@ -32,3 +32,7 @@ UnityAds
 11. Enter Ad Unit Ids for each type of ads.
 
 12. To test ads in build, you can also use the following Ad Unit Ids (do not use them in production as those are demo ids): https://ads.yandex.com/helpcenter/ru/dev/unity/demo-blocks
+
+If you publish on RuStore, make sure to mention your email that is used to create Yandex Mobile Ads account in the description of an app. For example, you can write something like: "Support: myemail@example.com".
+
+You can't create Ad Unit Ids for RuStore if you don't have game already published on Google Play. But if you want to, you can contact support for further assistance - this might work.
